@@ -12,7 +12,7 @@
   <meta property="og:url" content="https://j-ktz.github.io/john-katez-portfolio/index.html">
   <meta property="og:image" content="https://j-ktz.github.io/john-katez-portfolio/assets/images/og-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="assets/images/headshot-320.jpg">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css?v=41">
   <script defer src="assets/js/site.js?v=41"></script>
   <script type="application/ld+json">{
@@ -79,7 +79,7 @@
 
     <div class="hr"></div>
 
-    <div class="ticker-wrap">
+    <div class="ticker-wrap" id="highlights">
       <h2 style="margin:0;">Wins + highlights</h2>
       <button class="icon-btn" data-ticker-toggle aria-pressed="false" aria-label="Pause or play ticker">
         <span data-icon-pause><svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg></span>
@@ -181,6 +181,9 @@
       <button class="modal__close" data-modal-close aria-label="Close">✕</button>
     </div>
     <div class="modal__body" data-modal-body></div>
+    <div class="modal__actions">
+      <a class="btn btn--primary" data-modal-link href="#" target="_blank" rel="noopener" style="display:none;">Open link</a>
+    </div>
   </div>
 </div>
 
