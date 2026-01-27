@@ -64,25 +64,32 @@
   ],
   "socialEmbeds": [
     {
-      "title": "Add an Instagram Reel URL here",
+      "title": "AdventHealth on Instagram",
       "platform": "Instagram",
-      "embedType": "instagram",
-      "url": "https://www.instagram.com/reel/XXXXXXXXXXX/",
-      "tag": "Replace"
+      "embedType": "link",
+      "url": "https://www.instagram.com/adventhealth/",
+      "tag": "Social"
     },
     {
-      "title": "Add a LinkedIn post URL here",
+      "title": "AdventHealth on YouTube",
+      "platform": "YouTube",
+      "embedType": "link",
+      "url": "https://www.youtube.com/@AdventHealth",
+      "tag": "Video"
+    },
+    {
+      "title": "AdventHealth on LinkedIn",
       "platform": "LinkedIn",
       "embedType": "link",
-      "url": "https://www.linkedin.com/posts/johnkatez_XXXXXXXXXXXX",
-      "tag": "Replace"
+      "url": "https://www.linkedin.com/company/adventhealth/",
+      "tag": "Social"
     },
     {
-      "title": "Add an X/Twitter post URL here",
+      "title": "AdventHealth on X",
       "platform": "X",
-      "embedType": "twitter",
-      "url": "https://twitter.com/AdventHealth/status/XXXXXXXXXXX",
-      "tag": "Replace"
+      "embedType": "link",
+      "url": "https://x.com/AdventHealth",
+      "tag": "Social"
     }
   ]
 }

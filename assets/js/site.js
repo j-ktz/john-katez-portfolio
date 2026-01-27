@@ -2,6 +2,51 @@
   const ticker = document.querySelector('.ticker');
   const track = document.querySelector('.ticker__track');
 
+
+  // Rotating stat tiles (auto-flip + swap)
+  const statsWrap = document.querySelector('[data-rotating-stats]');
+  if (statsWrap) {
+    const slots = Array.from(statsWrap.querySelectorAll('.flip-stat'));
+    const STATS_ROTATE = [["10+ yrs", "social + content leadership"], ["Enterprise CoE", "Content Center of Excellence"], ["Gov at scale", "Guardrails + governance"], ["Exec storytelling", "Thought leadership activation"], ["10K+ interactions", "Single LinkedIn post"], ["37.5% ER", "LinkedIn engagement rate"], ["67K+ views", "YouTube campaign highlight"], ["Awards", "eHealthcare Leadership submissions"], ["Recognition", "Anthem / Webby / MarCom entries"], ["Ops improvements", "Toolkits + offboarding workflows"], ["Partnerships", "Sports / entertainment distribution"], ["Enablement", "Newsrooms + Lunch & Learns"], ["Measurement", "Reporting frameworks & dashboards"], ["Optimization", "Platform-native repurposing"], ["Editorial", "Calendars + governance"], ["Advocacy", "Employee advocacy programs"]];
+    const state = slots.map((_,i) => i); // start indices
+    const intervalMs = 4200;
+
+    function setFace(el, which, item) {
+      const face = el.querySelector(which);
+      if (!face) return;
+      const b = face.querySelector('b');
+      const s = face.querySelector('span');
+      if (b) b.textContent = item[0];
+      if (s) s.textContent = item[1];
+    }
+
+    function nextIndex(i) {
+      return (i + slots.length) % STATS_ROTATE.length;
+    }
+
+    // prime back faces
+    slots.forEach((el,slot) => {
+      const next = STATS_ROTATE[nextIndex(state[slot] + 1)];
+      setFace(el,'.flip-back', next);
+    });
+
+    setInterval(() => {
+      slots.forEach((el) => el.classList.add('is-flipped'));
+      setTimeout(() => {
+        slots.forEach((el,slot) => {
+          // advance
+          state[slot] = nextIndex(state[slot] + 1);
+          const frontItem = STATS_ROTATE[state[slot]];
+          const backItem = STATS_ROTATE[nextIndex(state[slot] + 1)];
+          setFace(el,'.flip-front', frontItem);
+          setFace(el,'.flip-back', backItem);
+          el.classList.remove('is-flipped');
+        });
+      }, 720);
+    }, intervalMs);
+  }
+
+
   const HIGHLIGHTS = [
   {
     "title": "Enterprise social governance framework",
