@@ -3,14 +3,16 @@
   const ticker = document.querySelector('.ticker');
   const track = document.querySelector('.ticker__track');
 
-  // Seamless ticker: duplicate items inside same row (fixes "two rows" bug)
   if (ticker && track && track.dataset.duplicated !== "true") {
     const items = Array.from(track.children);
     items.forEach(el => track.appendChild(el.cloneNode(true)));
     track.dataset.duplicated = "true";
   }
 
-  const pauseBtn = document.querySelector('[data-ticker-toggle]');
+  const toggleBtn = document.querySelector('[data-ticker-toggle]');
+  const iconPlay = document.querySelector('[data-icon-play]');
+  const iconPause = document.querySelector('[data-icon-pause]');
+
   const modal = document.querySelector('[data-modal]');
   const modalTitle = document.querySelector('[data-modal-title]');
   const modalBody = document.querySelector('[data-modal-body]');
@@ -19,12 +21,15 @@
   function setPaused(paused) {
     if (!ticker) return;
     ticker.classList.toggle('paused', paused);
-    if (pauseBtn) pauseBtn.textContent = paused ? "Play" : "Pause";
-    if (pauseBtn) pauseBtn.setAttribute("aria-pressed", paused ? "true" : "false");
+    if (toggleBtn) toggleBtn.setAttribute("aria-pressed", paused ? "true" : "false");
+    if (iconPlay && iconPause) {
+      iconPlay.style.display = paused ? "inline" : "none";
+      iconPause.style.display = paused ? "none" : "inline";
+    }
   }
 
-  if (pauseBtn) {
-    pauseBtn.addEventListener('click', () => {
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
       const paused = ticker.classList.contains('paused');
       setPaused(!paused);
     });
