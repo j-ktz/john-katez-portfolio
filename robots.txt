@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://j-ktz.github.io/john-katez-portfolio/sitemap.xml
