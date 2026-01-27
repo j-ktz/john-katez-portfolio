@@ -223,3 +223,70 @@
   buildTicker();
   duplicateForLoop();
 })();
+
+// Scroll reveal for sections/cards
+(() => {
+  const els = document.querySelectorAll('.card, .case-card, .stat, .press-card, .section, .tile');
+  els.forEach(el => el.classList.add('reveal'));
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.12, rootMargin: '0px 0px -10% 0px' });
+  els.forEach(el => io.observe(el));
+})();
+
+
+
+// v45: mobile nav toggle + rails + page transitions
+(() => {
+  const toggle = document.querySelector('[data-nav-toggle]');
+  if (!toggle) return;
+  toggle.addEventListener('click', () => {
+    document.documentElement.classList.toggle('nav-open');
+  });
+  document.addEventListener('click', (e) => {
+    if (!document.documentElement.classList.contains('nav-open')) return;
+    const within = e.target.closest('.site-header');
+    if (!within) document.documentElement.classList.remove('nav-open');
+  });
+})();
+
+(() => {
+  document.querySelectorAll('[data-rail]').forEach((rail) => {
+    const wrap = rail.closest('.rail-wrap');
+    const left = wrap?.querySelector('[data-rail-left]');
+    const right = wrap?.querySelector('[data-rail-right]');
+    const step = () => Math.max(320, Math.round(rail.clientWidth * 0.8));
+    const scrollBy = (dir) => rail.scrollBy({ left: dir * step(), behavior: 'smooth' });
+
+    left?.addEventListener('click', () => scrollBy(-1));
+    right?.addEventListener('click', () => scrollBy(1));
+
+    // show/hide buttons based on scroll position
+    const update = () => {
+      const max = rail.scrollWidth - rail.clientWidth - 2;
+      if (left) left.style.opacity = rail.scrollLeft > 4 ? "1" : ".35";
+      if (right) right.style.opacity = rail.scrollLeft < max ? "1" : ".35";
+    };
+    rail.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  });
+})();
+
+(() => {
+  // graceful fade between internal pages
+  document.querySelectorAll('a[href]').forEach((a) => {
+    const href = a.getAttribute('href') || '';
+    const isExternal = /^https?:\/\//i.test(href) || href.startsWith('mailto:') || href.startsWith('#');
+    if (isExternal) return;
+    a.addEventListener('click', (e) => {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      const url = new URL(href, window.location.href);
+      if (url.origin !== window.location.origin) return;
+      e.preventDefault();
+      document.body.classList.add('page-transition','is-leaving');
+      setTimeout(() => { window.location.href = url.href; }, 180);
+    });
+  });
+  document.body.classList.add('page-transition');
+})();
