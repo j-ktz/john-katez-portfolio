@@ -221,3 +221,7 @@ body.modal-open{overflow:hidden}
 .btn{transition:transform .15s ease, box-shadow .15s ease, background .15s ease}
 .btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(0,0,0,.35)}
 .btn:active{transform:translateY(0)}
+
+/* --- v50 calm tiles + low-key gallery --- */
+.nav a.active{padding:8px 14px}
+.hero-media{display:none} /* keep home clean if any lingering media */

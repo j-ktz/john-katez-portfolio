@@ -3,16 +3,19 @@
   const track = document.querySelector('.ticker__track');
 
 
-  // Rotating stat tiles (auto-flip + swap)
+
+  // ROTATING STAT TILES v50 (sequential, calm)
   const statsWrap = document.querySelector('[data-rotating-stats]');
   if (statsWrap) {
     const slots = Array.from(statsWrap.querySelectorAll('.flip-stat'));
-    const STATS_ROTATE = [["10+ yrs", "social + content leadership"], ["Enterprise CoE", "Content Center of Excellence"], ["Gov at scale", "Guardrails + governance"], ["Exec storytelling", "Thought leadership activation"], ["10K+ interactions", "Single LinkedIn post"], ["37.5% ER", "LinkedIn engagement rate"], ["67K+ views", "YouTube campaign highlight"], ["Awards", "eHealthcare Leadership submissions"], ["Recognition", "Anthem / Webby / MarCom entries"], ["Ops improvements", "Toolkits + offboarding workflows"], ["Partnerships", "Sports / entertainment distribution"], ["Enablement", "Newsrooms + Lunch & Learns"], ["Measurement", "Reporting frameworks & dashboards"], ["Optimization", "Platform-native repurposing"], ["Editorial", "Calendars + governance"], ["Advocacy", "Employee advocacy programs"]];
-    const state = slots.map((_,i) => i); // start indices
-    const intervalMs = 4200;
+    const ROTATE = [["Enterprise CoE", "Content Center of Excellence"], ["Gov at scale", "Guardrails + governance"], ["Exec storytelling", "Thought leadership activation"], ["10K+ interactions", "Single LinkedIn post"], ["37.5% ER", "LinkedIn engagement rate"], ["67K+ views", "YouTube campaign highlight"], ["Award submissions", "Webby / Anthem / MarCom"], ["Ops improvements", "Toolkits + offboarding workflows"], ["Measurement", "Reporting frameworks & dashboards"], ["Platform-native", "Repurposing + optimization"], ["Editorial rhythm", "Calendars + governance"], ["Enablement", "Newsrooms + Lunch & Learns"]];
+    const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const intervalMs = prefersReduced ? 9000 : 5200; // slower, calmer
+    let cursor = 0;      // global item pointer
+    let activeSlot = 0;  // which tile flips next
 
-    function setFace(el, which, item) {
-      const face = el.querySelector(which);
+    function setFace(el, whichSel, item) {
+      const face = el.querySelector(whichSel);
       if (!face) return;
       const b = face.querySelector('b');
       const s = face.querySelector('span');
@@ -20,29 +23,30 @@
       if (s) s.textContent = item[1];
     }
 
-    function nextIndex(i) {
-      return (i + slots.length) % STATS_ROTATE.length;
-    }
-
-    // prime back faces
-    slots.forEach((el,slot) => {
-      const next = STATS_ROTATE[nextIndex(state[slot] + 1)];
-      setFace(el,'.flip-back', next);
+    // Prime tiles with first 4 items
+    slots.forEach((el, i) => {
+      const item = ROTATE[(cursor + i) % ROTATE.length];
+      const next = ROTATE[(cursor + i + 4) % ROTATE.length];
+      setFace(el, '.flip-front', item);
+      setFace(el, '.flip-back', next);
     });
+    cursor = (cursor + 4) % ROTATE.length;
 
     setInterval(() => {
-      slots.forEach((el) => el.classList.add('is-flipped'));
+      const el = slots[activeSlot];
+      if (!el) return;
+
+      el.classList.add('is-flipped');
       setTimeout(() => {
-        slots.forEach((el,slot) => {
-          // advance
-          state[slot] = nextIndex(state[slot] + 1);
-          const frontItem = STATS_ROTATE[state[slot]];
-          const backItem = STATS_ROTATE[nextIndex(state[slot] + 1)];
-          setFace(el,'.flip-front', frontItem);
-          setFace(el,'.flip-back', backItem);
-          el.classList.remove('is-flipped');
-        });
-      }, 720);
+        // when flip completes, move back item to front and advance back
+        const frontItem = ROTATE[cursor % ROTATE.length];
+        const backItem  = ROTATE[(cursor + 4) % ROTATE.length];
+        setFace(el, '.flip-front', frontItem);
+        setFace(el, '.flip-back', backItem);
+        el.classList.remove('is-flipped');
+        cursor = (cursor + 1) % ROTATE.length;
+        activeSlot = (activeSlot + 1) % slots.length;
+      }, prefersReduced ? 0 : 720);
     }, intervalMs);
   }
 
