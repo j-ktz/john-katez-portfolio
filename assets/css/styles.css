@@ -209,3 +209,15 @@ body.modal-open{overflow:hidden}
 .badge .dot{width:7px;height:7px;border-radius:999px;background:rgba(120,95,255,.9)}
 /* Case-study tiles: tighten action row */
 .card-actions.compact .btn{padding:10px 12px}
+
+/* --- v49 tiles + CTA polish --- */
+.flip-front b, .flip-back b{display:block;line-height:1.05}
+.flip-front .muted, .flip-back .muted{display:block;margin-top:8px;line-height:1.25;opacity:.9}
+.flip-front, .flip-back{gap:2px}
+.stats.flip-stats{margin-top:18px}
+@media (min-width: 961px){
+  .flip-front .muted, .flip-back .muted{font-size:.98rem}
+}
+.btn{transition:transform .15s ease, box-shadow .15s ease, background .15s ease}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(0,0,0,.35)}
+.btn:active{transform:translateY(0)}
