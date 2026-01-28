@@ -91,5 +91,55 @@
       "url": "https://x.com/AdventHealth",
       "tag": "Social"
     }
+  ],
+  "links": [
+    {
+      "type": "award",
+      "title": "Shorty Impact Awards \u2014 Nonprofit Partnership (listing)",
+      "description": "Category page includes BPD / AdventHealth / Walt Disney World Resort \u201cTrue Believers in the Human Spirit\u201d.",
+      "url": "https://shortyawards.com/category/10th-impact/nonprofit-partnership",
+      "source": "Shorty Impact Awards",
+      "year": 2024
+    },
+    {
+      "type": "press",
+      "title": "The Place \u2014 AdventHealth Human Spirit Campaign (portfolio)",
+      "description": "Creative breakdown with film cutdowns and OOH/print examples; references Silver Healthcare Ad Award.",
+      "url": "https://rossgoldstein.net/the-place-adventhealth-human-spirit",
+      "source": "RossGoldstein.net",
+      "year": 2024
+    },
+    {
+      "type": "social",
+      "platform": "Instagram",
+      "title": "AdventHealth on Instagram",
+      "description": "Official Instagram profile.",
+      "url": "https://www.instagram.com/adventhealth/",
+      "label": "Instagram \u2022 @adventhealth"
+    },
+    {
+      "type": "social",
+      "platform": "YouTube",
+      "title": "AdventHealth on YouTube",
+      "description": "Official YouTube channel (brand spots + shorts).",
+      "url": "https://www.youtube.com/@AdventHealth",
+      "label": "YouTube \u2022 @AdventHealth"
+    },
+    {
+      "type": "social",
+      "platform": "LinkedIn",
+      "title": "AdventHealth on LinkedIn",
+      "description": "Company page + posts.",
+      "url": "https://www.linkedin.com/company/adventhealth/",
+      "label": "LinkedIn \u2022 Company page"
+    },
+    {
+      "type": "social",
+      "platform": "X",
+      "title": "AdventHealth on X",
+      "description": "Official X profile.",
+      "url": "https://x.com/AdventHealth",
+      "label": "X \u2022 @AdventHealth"
+    }
   ]
 }

@@ -363,34 +363,34 @@
   }
 
   function buildCard({title, eyebrow, desc, meta, href, thumb, tag, kind}){
-    const a = el("a", "card", {href: href || "#", target: href ? "_blank" : "_self", rel: href ? "noopener noreferrer" : ""});
+    const a = el("a", "gcard", {href: href || "#", target: href ? "_blank" : "_self", rel: href ? "noopener noreferrer" : ""});
     a.dataset.kind = kind || "";
-    const media = el("div", "card__media");
+    const media = el("div", "gcard__media");
     if (thumb){
-      const img = el("img", "card__img", {src: thumb, alt: ""});
+      const img = el("img", "gcard__img", {src: thumb, alt: ""});
       img.loading = "lazy";
       media.appendChild(img);
     } else {
-      media.classList.add("card__media--icon");
+      media.classList.add("gcard__media--icon");
       media.innerHTML = `<span aria-hidden="true">↗</span>`;
     }
-    const body = el("div", "card__body");
+    const body = el("div", "gcard__body");
     if (eyebrow){
-      const k = el("div", "card__eyebrow");
+      const k = el("div", "gcard__eyebrow");
       k.textContent = eyebrow;
       body.appendChild(k);
     }
-    const h = el("div", "card__title");
+    const h = el("div", "gcard__title");
     h.textContent = title || "";
     body.appendChild(h);
 
     if (desc){
-      const p = el("div", "card__desc");
+      const p = el("div", "gcard__desc");
       p.textContent = desc;
       body.appendChild(p);
     }
     if (meta){
-      const m = el("div", "card__meta");
+      const m = el("div", "gcard__meta");
       m.textContent = meta;
       body.appendChild(m);
     }
@@ -581,7 +581,7 @@
     qsa("[data-modal-close]").forEach(btn => btn.addEventListener("click", closeModal));
     document.addEventListener("keydown", (e)=>{ if (e.key === "Escape") closeModal(); });
 
-    fetch("assets/data/creative.json?v=52", {cache:"no-store"})
+    fetch("assets/data/creative.json?build=v52", {cache:"no-store"})
       .then(r => r.json())
       .then(data => {
         state.videos = Array.isArray(data.videos) ? data.videos : [];

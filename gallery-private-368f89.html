@@ -13,24 +13,32 @@
   <meta property="og:url" content="https://j-ktz.github.io/john-katez-portfolio/creative-gallery.html">
   <meta property="og:image" content="assets/images/og-image.jpg">
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/styles.css?v=51" />
+  <link rel="stylesheet" href="assets/css/styles.v52.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <a class="brand" href="index.html">John Katez</a>
-      <nav class="nav">
-        <a href="case-studies.html">Case studies</a>
-        <a href="creative-gallery.html" aria-current="page">Gallery</a>
-        <a href="resume.html">Resume</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <button class="nav-toggle" aria-label="Open menu" data-nav-toggle>
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
+  <div class="container header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__name">John Katez</span>
+      <span class="brand__role">Senior Manager, Social Media &amp; Content Strategy</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Open menu" data-nav-toggle>
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" data-nav>
+      <div class="nav__links">
+        <a class="nav__link " href="index.html">Home</a>
+        <a class="nav__link " href="case-studies.html">Case Studies</a>
+        <a class="nav__link " href="creative-gallery.html">Gallery</a>
+        <a class="nav__link " href="about.html">About</a>
+        <a class="nav__link " href="resume.html">Resume</a>
+        <a class="nav__link " href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
 
   <main>
 <section class="page-hero">
@@ -236,6 +244,6 @@
 </main>
 
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <script src="assets/js/site.js?v=51"></script>
+  <script src="assets/js/site.v52.js"></script>
 </body>
 </html>

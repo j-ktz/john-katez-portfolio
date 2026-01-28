@@ -13,8 +13,8 @@
   <meta property="og:image" content="https://j-ktz.github.io/john-katez-portfolio/assets/images/og-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/styles.css?v=51">
-  <script defer src="assets/js/site.js?v=51"></script>
+  <link rel="stylesheet" href="assets/css/styles.v52.css">
+  <script defer src="assets/js/site.v52.js"></script>
   <script type="application/ld+json">{
       "@context": "https://schema.org",
       "@type": "Person",
@@ -32,19 +32,26 @@
     }</script>
 </head>
 <body>
-<header class="header">
+<header class="site-header">
   <div class="container header__inner">
     <a class="brand" href="index.html">
-      <strong>John Katez</strong>
-      <span>Senior Manager, Social Media & Content Strategy</span>
+      <span class="brand__name">John Katez</span>
+      <span class="brand__role">Senior Manager, Social Media &amp; Content Strategy</span>
     </a>
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="nav__link" href="index.html">Home</a>
-<a class="nav__link" href="case-studies.html">Case Studies</a>
-            <a href="creative-gallery.html">Gallery</a>
-<a class="nav__link nav__link--active" href="about.html">About</a>
-<a class="nav__link" href="resume.html">Resume</a>
-<a class="nav__link" href="contact.html">Contact</a>
+
+    <button class="nav-toggle" type="button" aria-label="Open menu" data-nav-toggle>
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" data-nav>
+      <div class="nav__links">
+        <a class="nav__link " href="index.html">Home</a>
+        <a class="nav__link " href="case-studies.html">Case Studies</a>
+        <a class="nav__link " href="creative-gallery.html">Gallery</a>
+        <a class="nav__link nav__link--active" href="about.html">About</a>
+        <a class="nav__link " href="resume.html">Resume</a>
+        <a class="nav__link " href="contact.html">Contact</a>
+      </div>
     </nav>
   </div>
 </header>
@@ -95,6 +102,21 @@
       </div></div>
     </div>
   </div>
+
+<section class="section">
+  <div class="container">
+    <div class="card"><div class="card__inner">
+      <h2>Outside of work</h2>
+      <p class="muted">I’m a systems‑person in real life too — I love optimizing tech, routines, and experiences.</p>
+      <ul class="list">
+        <li>Fitness (strength + treadmill walks) and generally chasing “better, not perfect.”</li>
+        <li>Tech + smart‑home tinkering (Apple ecosystem, home media, automation).</li>
+        <li>Games, movies, and pop‑culture deep dives (especially Nintendo + nostalgia).</li>
+        <li>Playlists, remixes, and anything that makes a night in feel like an event.</li>
+      </ul>
+    </div></div>
+  </div>
+</section>
 </section>
 
 </main>
