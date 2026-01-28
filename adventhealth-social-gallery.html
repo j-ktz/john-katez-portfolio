@@ -12,7 +12,7 @@
   <meta property="og:url" content="https://j-ktz.github.io/john-katez-portfolio/adventhealth-social-gallery.html">
   <meta property="og:image" content="assets/images/og-image.jpg">
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=48" />
 </head>
 <body>
   <header class="site-header">
@@ -34,7 +34,6 @@
   <main>
 <section class="page-hero">
   <div class="container">
-    <p class="kicker">Creative + performance signals</p>
     <h1>Creative &amp; content gallery</h1>
     <p class="lede">A living shelf of public-facing work signals: brand spots, campaign proof, and social embeds. (YouTube uses public view counts; social embeds are easily swappable.)</p>
     <div class="hero-actions">
@@ -129,7 +128,6 @@
     return `
       <button class="card card-click" data-kind="${kind}" data-url="${escapeHtml(item.url)}" data-embed="${escapeHtml(item.embedType||'link')}" data-id="${escapeHtml(item.id||'')}" data-title="${escapeHtml(item.title)}" data-meta="${escapeHtml(meta)}">
         <div class="card-body">
-          <p class="kicker">${escapeHtml(item.platform || '')}</p>
           <h3 class="card-title">${escapeHtml(item.title)}</h3>
           <p class="card-meta muted">${escapeHtml(meta)}</p>
           <span class="chip">${escapeHtml(item.tag || 'Featured')}</span>
@@ -142,7 +140,6 @@
     return `
       <a class="card" href="${escapeHtml(p.url)}" target="_blank" rel="noopener">
         <div class="card-body">
-          <p class="kicker">${escapeHtml(p.tag || 'Proof')}</p>
           <h3 class="card-title">${escapeHtml(p.title)}</h3>
           <p class="card-meta muted">${escapeHtml(p.meta || 'Opens in a new tab')}</p>
           <span class="link-arrow">Open →</span>
@@ -238,6 +235,6 @@
 </main>
 
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <script src="assets/js/site.js"></script>
+  <script src="assets/js/site.js?v=48"></script>
 </body>
 </html>

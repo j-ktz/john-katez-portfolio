@@ -186,3 +186,26 @@ body.modal-open{overflow:hidden}
 .flip-front,.flip-back{border:1px solid rgba(255,255,255,.12);background:rgba(0,0,0,.18);border-radius:18px;padding:18px;min-height:98px;display:flex;flex-direction:column;gap:8px;justify-content:center}
 .flip-front b,.flip-back b{font-size:1.55rem;letter-spacing:-.02em}
 .flip-back{position:absolute;inset:0;transform:rotateY(180deg)}
+
+/* --- v48 cleanup + polish --- */
+.page-hero .kicker{display:none !important;} /* remove pill tags above H1 on standard pages */
+.page-hero .lede{max-width:68ch}
+.details-list{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.details-list li{display:flex;gap:10px;align-items:flex-start}
+.icon-pin{width:18px;height:18px;flex:0 0 18px;opacity:.9}
+.location-card{position:relative;overflow:hidden}
+.location-card::after{
+  content:"";
+  position:absolute; inset:-40px -60px auto auto;
+  width:240px; height:240px; border-radius:999px;
+  background:radial-gradient(circle at 30% 30%, rgba(120,95,255,.22), rgba(0,0,0,0));
+  filter:blur(2px);
+  pointer-events:none;
+}
+.badge-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.03);color:inherit}
+.badge strong{font-weight:650}
+.badge .dot{width:7px;height:7px;border-radius:999px;background:rgba(120,95,255,.9)}
+/* Case-study tiles: tighten action row */
+.card-actions.compact .btn{padding:10px 12px}
