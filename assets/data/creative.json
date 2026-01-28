@@ -1,0 +1,95 @@
+{
+  "updated": "2026-01-27",
+  "videos": [
+    {
+      "title": "AdventHealth is #1 for Tourists in Central Florida",
+      "platform": "YouTube",
+      "embedType": "youtube",
+      "id": "F9vBPBxpbbc",
+      "url": "https://www.youtube.com/watch?v=F9vBPBxpbbc",
+      "statLabel": "2,136,455 views",
+      "date": "2024-08-12",
+      "tag": "Brand spot"
+    },
+    {
+      "title": "AdventHealth \u2014 Central Florida's #1 Trusted ER",
+      "platform": "YouTube",
+      "embedType": "youtube",
+      "id": "d1hjGt1DpyI",
+      "url": "https://www.youtube.com/watch?v=d1hjGt1DpyI",
+      "statLabel": "131,745 views",
+      "date": "2024-02-27",
+      "tag": "Brand spot"
+    },
+    {
+      "title": "Celebrating the Human Spirit",
+      "platform": "YouTube",
+      "embedType": "youtube",
+      "id": "PcUoNWI1ptU",
+      "url": "https://www.youtube.com/watch?v=PcUoNWI1ptU",
+      "statLabel": "8,189 views",
+      "date": "2023-10-23",
+      "tag": "Campaign"
+    },
+    {
+      "title": "AdventHealth \u2014 Human Spirit (film)",
+      "platform": "Vimeo",
+      "embedType": "vimeo",
+      "id": "411527012",
+      "url": "https://vimeo.com/411527012",
+      "statLabel": "Vimeo",
+      "date": "",
+      "tag": "Campaign film"
+    }
+  ],
+  "proof": [
+    {
+      "title": "Shorty Impact Awards \u2014 AdventHealth x Disney: True Believers in the Human Spirit",
+      "url": "https://shortyawards.com/10th-impact/bpd-adventhealth-disney-true-believers-in-the-human-spirit",
+      "meta": "Impact metrics + media gallery",
+      "tag": "Awards"
+    },
+    {
+      "title": "Orlando ADDY Winners \u2014 AdventHealth The Human Spirit",
+      "url": "https://www.orlandoaddys.com/winners/2024/winners/adventhealth-the-human-spirit/",
+      "meta": "Silver award winner listing",
+      "tag": "Awards"
+    },
+    {
+      "title": "Ross Goldstein \u2014 The Place (Human Spirit campaign work)",
+      "url": "https://rossgoldstein.net/the-place-adventhealth-human-spirit",
+      "meta": "Creative breakdown + video cutdowns",
+      "tag": "Creative"
+    }
+  ],
+  "socialEmbeds": [
+    {
+      "title": "AdventHealth on Instagram",
+      "platform": "Instagram",
+      "embedType": "link",
+      "url": "https://www.instagram.com/adventhealth/",
+      "tag": "Social"
+    },
+    {
+      "title": "AdventHealth on YouTube",
+      "platform": "YouTube",
+      "embedType": "link",
+      "url": "https://www.youtube.com/@AdventHealth",
+      "tag": "Video"
+    },
+    {
+      "title": "AdventHealth on LinkedIn",
+      "platform": "LinkedIn",
+      "embedType": "link",
+      "url": "https://www.linkedin.com/company/adventhealth/",
+      "tag": "Social"
+    },
+    {
+      "title": "AdventHealth on X",
+      "platform": "X",
+      "embedType": "link",
+      "url": "https://x.com/AdventHealth",
+      "tag": "Social"
+    }
+  ]
+}
