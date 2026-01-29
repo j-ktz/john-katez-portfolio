@@ -434,3 +434,262 @@ body.modal-open{ overflow:hidden; }
 @media (prefers-reduced-motion: reduce){
   .ticker-track{ animation: none !important; }
 }
+
+/* =========================================================
+   v54 overrides: cache-bust + padding safety + Safari perf
+   ========================================================= */
+
+/* prevent edge-to-edge content if any section misses .container */
+.page .site-main > section,
+.page main > section {
+  padding-left: clamp(16px, 3.5vw, 32px);
+  padding-right: clamp(16px, 3.5vw, 32px);
+}
+
+/* keep containers consistent */
+.container {
+  width: min(1100px, 100%);
+  margin-inline: auto;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* Safari: backdrop-filter can hang on large blurred layers when opening modals */
+@supports (-webkit-touch-callout: none) {
+  .modal__overlay,
+  .modal__panel,
+  .highlight-modal__overlay,
+  .highlight-modal__panel {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+}
+
+/* Guard against certain browser extensions injecting high-z overlays */
+#shadow-host-ps-modals {
+  display: none !important;
+}
+
+/* =========================================================
+   v54 overrides: layout padding + Safari performance + extension guard
+   ========================================================= */
+
+html, body { overflow-x: hidden; }
+
+/* Ensure content never touches browser edge */
+.container {
+  padding-left: clamp(16px, 4vw, 28px);
+  padding-right: clamp(16px, 4vw, 28px);
+}
+
+/* Safe area support (iOS notch) */
+@supports (padding: env(safe-area-inset-left)) {
+  .container {
+    padding-left: max(clamp(16px, 4vw, 28px), env(safe-area-inset-left));
+    padding-right: max(clamp(16px, 4vw, 28px), env(safe-area-inset-right));
+  }
+}
+
+/* Safari can choke on heavy backdrop filters when opening modals */
+@supports (-webkit-touch-callout: none) {
+  .modal__overlay,
+  .modal__panel,
+  .highlight-modal__overlay,
+  .highlight-modal__panel {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+}
+
+/* Guard against PerkSpot/extension injected shadow host covering UI */
+#shadow-host-ps-modals { display: none !important; }
+
+
+/* =========================================================
+   v54 overrides: layout padding + Safari performance + extension guard
+   ========================================================= */
+
+html, body { overflow-x: hidden; }
+
+:root {
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+}
+
+/* Ensure content never touches browser edge */
+.container {
+  padding-left: calc(clamp(16px, 4vw, 28px) + var(--safe-left));
+  padding-right: calc(clamp(16px, 4vw, 28px) + var(--safe-right));
+}
+
+/* Homepage sometimes used main.container – keep it padded too */
+main.container {
+  padding-left: calc(clamp(16px, 4vw, 28px) + var(--safe-left));
+  padding-right: calc(clamp(16px, 4vw, 28px) + var(--safe-right));
+}
+
+/* Safari can choke on heavy blur/backdrop-filter during modal open */
+.modal__overlay,
+.modal__panel,
+.highlight-modal__overlay,
+.highlight-modal__panel {
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+
+/* Keep overlay performant */
+.modal__overlay,
+.highlight-modal__overlay {
+  background: rgba(0,0,0,.62) !important;
+}
+
+/* Some browser extensions inject full-screen shadow DOM modals */
+#shadow-host-ps-modals { display: none !important; }
+
+/* =========================================================
+   v54 overrides: padding + Safari modal performance + extension guard
+   ========================================================= */
+
+html, body { overflow-x: hidden; }
+
+:root {
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+}
+
+.container {
+  padding-left: clamp(16px, 4vw, 28px);
+  padding-right: clamp(16px, 4vw, 28px);
+}
+
+.site-header,
+.site-footer,
+.site-main {
+  padding-left: var(--safe-left);
+  padding-right: var(--safe-right);
+}
+
+/* Safari: backdrop-filter on large fixed overlays can stutter/freeze */
+@supports (-webkit-touch-callout: none) {
+  .modal__overlay,
+  .modal__panel,
+  .highlight-modal__overlay,
+  .highlight-modal__panel {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+}
+
+/* Browser extensions sometimes inject huge fixed shadow hosts */
+#shadow-host-ps-modals { display: none !important; }
+
+/* =========================================================
+   v54 overrides: padding + Safari modal performance + extension guard
+   ========================================================= */
+
+html, body { overflow-x: hidden; }
+
+:root {
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+}
+
+.container {
+  padding-left: clamp(16px, 4vw, 28px);
+  padding-right: clamp(16px, 4vw, 28px);
+}
+
+.site-header,
+.site-footer,
+.site-main {
+  padding-left: var(--safe-left);
+  padding-right: var(--safe-right);
+}
+
+/* Safari: remove heavy backdrop blur on modals to prevent freezes */
+@supports (-webkit-touch-callout: none) {
+  .modal__overlay,
+  .modal__panel,
+  .modal__content {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+}
+
+/* Hide PerkSpot injected modal host if present */
+#shadow-host-ps-modals { display: none !important; }
+
+/* =========================================================
+   v54 overrides: padding + Safari modal performance + extension guard
+   ========================================================= */
+
+html, body { overflow-x: hidden; }
+
+:root {
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+}
+
+.container {
+  padding-left: clamp(16px, 4vw, 28px);
+  padding-right: clamp(16px, 4vw, 28px);
+}
+
+.site-header,
+.site-footer,
+.site-main {
+  padding-left: var(--safe-left);
+  padding-right: var(--safe-right);
+}
+
+/* Safari perf: avoid expensive backdrop-filter on modals */
+@supports (-webkit-touch-callout: none) {
+  .modal__overlay,
+  .modal__panel,
+  .highlight-modal,
+  .highlight-modal__panel {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+}
+
+/* Browser extensions can inject giant overlays; hide known host */
+#shadow-host-ps-modals { display: none !important; }
+
+/* =========================================================
+   v54 overrides: padding + Safari modal performance + extension guard
+   ========================================================= */
+
+html, body { overflow-x: hidden; }
+
+:root {
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+}
+
+.container {
+  padding-left: clamp(16px, 4vw, 28px);
+  padding-right: clamp(16px, 4vw, 28px);
+}
+
+.site-header,
+.site-footer,
+.site-main {
+  padding-left: var(--safe-left);
+  padding-right: var(--safe-right);
+}
+
+/* Safari performance: avoid heavy backdrop blur on modals */
+@supports (-webkit-touch-callout: none) {
+  .modal__overlay,
+  .modal__panel {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+}
+
+/* Browser extensions can inject gigantic overlays; hide known offender */
+#shadow-host-ps-modals { display: none !important; }
+

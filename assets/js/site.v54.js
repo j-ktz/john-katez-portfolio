@@ -33,6 +33,7 @@
     cursor = (cursor + 4) % ROTATE.length;
 
     setInterval(() => {
+    if (document.documentElement.dataset.modalOpen) return;
       const el = slots[activeSlot];
       if (!el) return;
 
@@ -239,6 +240,7 @@
   }
 
   function closeModal() {
+    delete document.documentElement.dataset.modalOpen;
     if (!modal) return;
     modal.setAttribute("aria-hidden", "true");
     document.body.style.overflow = "";
