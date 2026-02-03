@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Feel Whole preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e1720"/>
+      <stop offset="50%" stop-color="#172633"/>
+      <stop offset="100%" stop-color="#0b1118"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="18%" cy="-5%" r="70%">
+      <stop offset="0%" stop-color="#4a7aa0" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#0f1a23" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)"/>
+  <rect width="960" height="540" fill="url(#glow)"/>
+  <rect x="26" y="26" width="908" height="488" rx="28" ry="28" fill="none" stroke="#2c3f4f" stroke-width="2" opacity="0.6"/>
+  <g fill="none" stroke="#223443" stroke-width="1" opacity="0.35">
+    <path d="M70 420 L250 300 L380 360 L560 230 L800 310"/>
+    <circle cx="250" cy="300" r="6" fill="#2e4354"/>
+    <circle cx="560" cy="230" r="6" fill="#2e4354"/>
+  </g>
+  <text x="70" y="130" font-family="'Arial', sans-serif" font-size="34" fill="#c5d3df" letter-spacing="1">Feel Whole</text>
+  <text x="70" y="175" font-family="'Arial', sans-serif" font-size="18" fill="#90a6b8">Campaign platform</text>
+</svg>

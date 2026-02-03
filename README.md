@@ -1,9 +1,9 @@
 # John Katez Portfolio
 
-Version: v6.3 (v68 gallery + case study thumbnails)
+Version: v6.4 (v69 fixes + best work thumbnails)
 Updated: 2026-02-03
 
-## Changelog (v68)
-- Added gallery fallbacks to prevent missing thumbnail tiles.
-- Added consistent thumbnails to the case studies index.
-- Added placeholder image set for proof/library cards.
+## Changelog (v69)
+- Fixed highlight ticker modal visibility.
+- Rebuilt best work library thumbnails with local assets.
+- Added image fallbacks for library and case study tiles.
