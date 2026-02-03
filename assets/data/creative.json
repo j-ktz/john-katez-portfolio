@@ -298,76 +298,31 @@
   ],
   "socialHighlights": [
     {
-      "title": "Global Missions expansion",
-      "platform": "LinkedIn",
-      "description": "AdventHealth Global Missions expands Amazon River outreach in Peru and Brazil.",
-      "url": "https://www.linkedin.com/posts/adventhealth_adventhealth-global-missions-is-expanding-activity-7374789143459045376-uANM",
-      "tag": "Community impact",
-      "type": "social"
+      "title": "Feel Whole campaign hub",
+      "platform": "Campaign",
+      "description": "Brand platform landing focused on whole-person care.",
+      "url": "https://health.adventhealth.com/feelwhole",
+      "thumb": "https://www.adventhealth.com/sites/default/files/styles/sixteen_nine_lg/public/2024-08/Seascape%20PA%2010.jpg.webp",
+      "tag": "Feel Whole",
+      "type": "campaign"
     },
     {
-      "title": "Corporate campus solar energy project",
-      "platform": "LinkedIn",
-      "description": "Announcement of a solar energy project and EV charging investment at the corporate campus.",
-      "url": "https://www.linkedin.com/posts/adventhealth_adventhealths-corporate-campus-solar-energy-activity-7308532945936416769-LYkV",
-      "tag": "Sustainability",
-      "type": "social"
+      "title": "Feel Whole storytelling series",
+      "platform": "Campaign",
+      "description": "Story-led programming aligned to the Feel Whole platform.",
+      "url": "https://health.adventhealth.com/feelwhole",
+      "thumb": "https://www.adventhealth.com/sites/default/files/styles/sixteen_nine_lg/public/2024-08/Older%20couple%20riding%20bikes.jpg.webp",
+      "tag": "Story series",
+      "type": "campaign"
     },
     {
-      "title": "Supply chain team spotlight",
-      "platform": "LinkedIn",
-      "description": "Post recognizing supply chain teams supporting patient experience across AdventHealth.",
-      "url": "https://www.linkedin.com/posts/adventhealth_behind-every-patient-experience-is-a-team-activity-7397328983278903296-5vMG",
-      "tag": "Operations",
-      "type": "social"
-    },
-    {
-      "title": "America's Greatest Workplaces for Diversity",
-      "platform": "LinkedIn",
-      "description": "Recognition of AdventHealth among America\u2019s Greatest Workplaces for Diversity.",
-      "url": "https://www.linkedin.com/posts/adventhealth_adventhealth-among-americas-greatest-workplaces-activity-7155950669835718656-ckzd",
-      "tag": "Employer brand",
-      "type": "social"
-    },
-    {
-      "title": "Join our AdventHealth team",
-      "platform": "LinkedIn",
-      "description": "Recruiting post inviting talent to join AdventHealth teams.",
-      "url": "https://www.linkedin.com/posts/adventhealth_join-our-adventhealth-team-activity-6923347170729340928-q6wA",
-      "tag": "Recruiting",
-      "type": "social"
-    },
-    {
-      "title": "Life at AdventHealth",
-      "platform": "Instagram",
-      "description": "Employer brand highlights and behind-the-scenes culture stories.",
-      "url": "https://www.instagram.com/lifeatadventhealth/",
-      "tag": "Employer brand",
-      "type": "social"
-    },
-    {
-      "title": "AdventHealth on Instagram",
-      "platform": "Instagram",
-      "description": "Main brand feed with campaign and community storytelling.",
-      "url": "https://www.instagram.com/adventhealth/",
-      "tag": "Brand storytelling",
-      "type": "social"
-    },
-    {
-      "title": "AdventHealth Central Florida",
-      "platform": "X",
-      "description": "Regional updates, community care news, and brand storytelling.",
-      "url": "https://x.com/AdventHealthCFL",
-      "tag": "Community care",
-      "type": "social"
-    },
-    {
-      "title": "Greater As A Whole (AdventHealth Careers)",
-      "platform": "X",
-      "description": "Employer brand and recruiting stories from AdventHealth Careers.",
-      "url": "https://twitter.com/GreaterAsAWhole",
-      "tag": "Recruiting",
-      "type": "social"
+      "title": "100 Whole Lives video series",
+      "platform": "Campaign",
+      "description": "Public video series featuring patient stories and outcomes.",
+      "url": "https://www.adventhealth.com/videos",
+      "thumb": "https://www.adventhealth.com/sites/default/files/styles/sixteen_nine_lg/public/2024-08/Mother%20and%20daughter%20together.jpg.webp",
+      "tag": "Video series",
+      "type": "campaign"
     },
     {
       "title": "The #WholeLifeGoal: Feel Whole",
@@ -376,7 +331,7 @@
       "url": "https://www.youtube.com/watch?v=WtrUzejq1zg",
       "thumb": "https://i.ytimg.com/vi/WtrUzejq1zg/hqdefault.jpg",
       "tag": "Brand platform",
-      "type": "social"
+      "type": "video"
     },
     {
       "title": "Emotional Support, by AdventHealth",
@@ -385,7 +340,7 @@
       "url": "https://www.youtube.com/watch?v=9rD8G2AjJjU",
       "thumb": "https://i.ytimg.com/vi/9rD8G2AjJjU/hqdefault.jpg",
       "tag": "Brand story",
-      "type": "social"
+      "type": "video"
     },
     {
       "title": "We're always with you",
@@ -394,79 +349,62 @@
       "url": "https://www.youtube.com/watch?v=WNwTjXr2cU8",
       "thumb": "https://i.ytimg.com/vi/WNwTjXr2cU8/hqdefault.jpg",
       "tag": "Brand spot",
-      "type": "social"
-    },
+      "type": "video"
+    }
+  ],
+  "socialTiles": [
     {
-      "title": "CEO transition announcement",
+      "title": "Leadership update",
       "platform": "LinkedIn",
-      "description": "AdventHealth leadership transition update with CEO succession details.",
+      "description": "CEO transition and executive communications.",
       "url": "https://www.linkedin.com/posts/adventhealth_as-our-president-and-ceo-terry-shaw-prepares-activity-7348336408136230912-_0JJ",
+      "thumb": "assets/images/social/tiles/tile-leadership.svg",
       "tag": "Leadership",
       "type": "social"
     },
     {
-      "title": "AdventHealth Manchester achievement",
+      "title": "Community impact spotlight",
       "platform": "LinkedIn",
-      "description": "Team recognition for a North West Provider Accolade achievement.",
-      "url": "https://www.linkedin.com/posts/adventhealth_we-are-so-proud-of-our-team-members-at-adventhealth-activity-7298046204695793665-B_r7",
-      "tag": "Clinical excellence",
-      "type": "social"
-    },
-    {
-      "title": "National Volunteer Week spotlight",
-      "platform": "LinkedIn",
-      "description": "Volunteer recognition post from AdventHealth Central Florida.",
+      "description": "Volunteer and local investment highlights.",
       "url": "https://www.linkedin.com/posts/adventhealthcfl_in-honor-of-national-volunteer-week-we-activity-7332870964097112064-mDHk",
-      "tag": "Community impact",
+      "thumb": "assets/images/social/tiles/tile-community.svg",
+      "tag": "Community",
       "type": "social"
     },
     {
-      "title": "AI for imaging launch",
+      "title": "Sustainability momentum",
       "platform": "LinkedIn",
-      "description": "Aidoc + AdventHealth launch for AI in clinical imaging workflows.",
-      "url": "https://www.linkedin.com/posts/aidoc_aidoc-and-adventhealth-launch-ai-for-imaging-activity-6976287600662663168-XvlC",
-      "tag": "Innovation",
-      "type": "social"
-    },
-    {
-      "title": "CEO first week reflection",
-      "platform": "LinkedIn",
-      "description": "David Banks reflects on his first week as AdventHealth CEO.",
-      "url": "https://www.linkedin.com/posts/david-banks-md-67519939_adventhealth-ceo-first-week-activity-7343270976102256641-5YCC",
-      "tag": "Leadership",
-      "type": "social"
-    },
-    {
-      "title": "Leadership AdventHealth program",
-      "platform": "LinkedIn",
-      "description": "David Weis highlights a new cohort of Leadership AdventHealth.",
-      "url": "https://www.linkedin.com/posts/david-weis-3565b71_leadership-adventhealth-activity-7270802864786905088-XelF",
-      "tag": "Talent development",
-      "type": "social"
-    },
-    {
-      "title": "Sustainability partnership",
-      "platform": "LinkedIn",
-      "description": "Watershed + AdventHealth partnership announcement on sustainability goals.",
-      "url": "https://www.linkedin.com/posts/watershedclimate_adventhealth-sustainability-activity-7090728611640066048-nuqF",
+      "description": "Energy + campus sustainability initiatives.",
+      "url": "https://www.linkedin.com/posts/adventhealth_adventhealths-corporate-campus-solar-energy-activity-7308532945936416769-LYkV",
+      "thumb": "assets/images/social/tiles/tile-sustainability.svg",
       "tag": "Sustainability",
       "type": "social"
     },
     {
-      "title": "Community investment spotlight",
-      "platform": "LinkedIn",
-      "description": "AdventHealth Central Florida community investment initiative across local projects.",
-      "url": "https://www.linkedin.com/posts/leejohnsonfl_adventhealthcfl-adventhealth-activity-7223022557723654144-e5sB",
-      "tag": "Community care",
+      "title": "Employer brand",
+      "platform": "Instagram",
+      "description": "Culture and recruiting storytelling.",
+      "url": "https://www.instagram.com/lifeatadventhealth/",
+      "thumb": "assets/images/social/tiles/tile-employer.svg",
+      "tag": "Employer brand",
       "type": "social"
     },
     {
-      "title": "Communicating the Vision with AdventHealth",
-      "platform": "YouTube",
-      "description": "Community partnership story featuring AdventHealth and local education leaders.",
-      "url": "https://www.youtube.com/watch?v=voLtrUqKlCA",
-      "thumb": "https://i.ytimg.com/vi/voLtrUqKlCA/hqdefault.jpg",
-      "tag": "Community partnership",
+      "title": "Innovation highlight",
+      "platform": "LinkedIn",
+      "description": "AI-assisted imaging workflow launch.",
+      "url": "https://www.linkedin.com/posts/aidoc_aidoc-and-adventhealth-launch-ai-for-imaging-activity-6976287600662663168-XvlC",
+      "thumb": "assets/images/social/tiles/tile-innovation.svg",
+      "tag": "Innovation",
+      "type": "social"
+    },
+    {
+      "title": "Operations spotlight",
+      "platform": "LinkedIn",
+      "description": "Supply chain and operations recognition.",
+      "url": "https://www.linkedin.com/posts/adventhealth_behind-every-patient-experience-is-a-team-activity-7397328983278903296-5vMG",
+      "thumb": "assets/images/social/tiles/tile-operations.svg",
+      "tag": "Operations",
       "type": "social"
     }
   ]

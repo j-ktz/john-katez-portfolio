@@ -1,9 +1,9 @@
 # John Katez Portfolio
 
-Version: v6.0 (v65 gallery thumbnails + remove recruiter mode)
+Version: v6.1 (v66 campaign highlights + social proof tiles)
 Updated: 2026-02-03
 
-## Changelog (v65)
-- Removed recruiter mode toggle and logic.
-- Added platform thumbnail fallbacks for social highlights.
-- Updated social highlight card layout for stronger visuals.
+## Changelog (v66)
+- Rebuilt social highlights with real campaign + YouTube thumbnails only.
+- Added branded social proof tiles (no broken images).
+- Refined social card layout + updated homepage rail thumbnails.
