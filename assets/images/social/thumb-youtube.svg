@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2a0c0c"/>
+      <stop offset="1" stop-color="#7a1212"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect x="60" y="60" width="1080" height="555" rx="36" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)"/>
+  <rect x="90" y="120" width="300" height="180" rx="24" fill="rgba(255,255,255,0.15)"/>
+  <polygon points="200,165 200,255 275,210" fill="rgba(255,255,255,0.7)"/>
+  <rect x="430" y="150" width="420" height="16" rx="8" fill="rgba(255,255,255,0.25)"/>
+  <rect x="430" y="180" width="300" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+  <text x="90" y="590" font-family="Segoe UI, Arial, sans-serif" font-size="90" font-weight="700" fill="#ffffff">YouTube</text>
+  <text x="360" y="590" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="600" fill="rgba(255,255,255,0.7)">highlight</text>
+</svg>

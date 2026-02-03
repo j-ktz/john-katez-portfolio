@@ -1,9 +1,9 @@
 # John Katez Portfolio
 
-Version: v5.9 (v64 gallery expansion + snapshot strips)
+Version: v6.0 (v65 gallery thumbnails + remove recruiter mode)
 Updated: 2026-02-03
 
-## Changelog (v64)
-- Expanded social highlights (LinkedIn + YouTube + partner proof).
-- Added recruiter snapshot strips + downloadable bullet files.
-- Expanded visual libraries across all case studies.
+## Changelog (v65)
+- Removed recruiter mode toggle and logic.
+- Added platform thumbnail fallbacks for social highlights.
+- Updated social highlight card layout for stronger visuals.
