@@ -379,6 +379,79 @@
       "thumb": "https://i.ytimg.com/vi/WNwTjXr2cU8/hqdefault.jpg",
       "tag": "Brand spot",
       "type": "social"
+    },
+    {
+      "title": "CEO transition announcement",
+      "platform": "LinkedIn",
+      "description": "AdventHealth leadership transition update with CEO succession details.",
+      "url": "https://www.linkedin.com/posts/adventhealth_as-our-president-and-ceo-terry-shaw-prepares-activity-7348336408136230912-_0JJ",
+      "tag": "Leadership",
+      "type": "social"
+    },
+    {
+      "title": "AdventHealth Manchester achievement",
+      "platform": "LinkedIn",
+      "description": "Team recognition for a North West Provider Accolade achievement.",
+      "url": "https://www.linkedin.com/posts/adventhealth_we-are-so-proud-of-our-team-members-at-adventhealth-activity-7298046204695793665-B_r7",
+      "tag": "Clinical excellence",
+      "type": "social"
+    },
+    {
+      "title": "National Volunteer Week spotlight",
+      "platform": "LinkedIn",
+      "description": "Volunteer recognition post from AdventHealth Central Florida.",
+      "url": "https://www.linkedin.com/posts/adventhealthcfl_in-honor-of-national-volunteer-week-we-activity-7332870964097112064-mDHk",
+      "tag": "Community impact",
+      "type": "social"
+    },
+    {
+      "title": "AI for imaging launch",
+      "platform": "LinkedIn",
+      "description": "Aidoc + AdventHealth launch for AI in clinical imaging workflows.",
+      "url": "https://www.linkedin.com/posts/aidoc_aidoc-and-adventhealth-launch-ai-for-imaging-activity-6976287600662663168-XvlC",
+      "tag": "Innovation",
+      "type": "social"
+    },
+    {
+      "title": "CEO first week reflection",
+      "platform": "LinkedIn",
+      "description": "David Banks reflects on his first week as AdventHealth CEO.",
+      "url": "https://www.linkedin.com/posts/david-banks-md-67519939_adventhealth-ceo-first-week-activity-7343270976102256641-5YCC",
+      "tag": "Leadership",
+      "type": "social"
+    },
+    {
+      "title": "Leadership AdventHealth program",
+      "platform": "LinkedIn",
+      "description": "David Weis highlights a new cohort of Leadership AdventHealth.",
+      "url": "https://www.linkedin.com/posts/david-weis-3565b71_leadership-adventhealth-activity-7270802864786905088-XelF",
+      "tag": "Talent development",
+      "type": "social"
+    },
+    {
+      "title": "Sustainability partnership",
+      "platform": "LinkedIn",
+      "description": "Watershed + AdventHealth partnership announcement on sustainability goals.",
+      "url": "https://www.linkedin.com/posts/watershedclimate_adventhealth-sustainability-activity-7090728611640066048-nuqF",
+      "tag": "Sustainability",
+      "type": "social"
+    },
+    {
+      "title": "Community investment spotlight",
+      "platform": "LinkedIn",
+      "description": "AdventHealth Central Florida community investment initiative across local projects.",
+      "url": "https://www.linkedin.com/posts/leejohnsonfl_adventhealthcfl-adventhealth-activity-7223022557723654144-e5sB",
+      "tag": "Community care",
+      "type": "social"
+    },
+    {
+      "title": "Communicating the Vision with AdventHealth",
+      "platform": "YouTube",
+      "description": "Community partnership story featuring AdventHealth and local education leaders.",
+      "url": "https://www.youtube.com/watch?v=voLtrUqKlCA",
+      "thumb": "https://i.ytimg.com/vi/voLtrUqKlCA/hqdefault.jpg",
+      "tag": "Community partnership",
+      "type": "social"
     }
   ]
 }

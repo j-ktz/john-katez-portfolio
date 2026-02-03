@@ -1,0 +1,4 @@
+- Role: Campaign enablement lead (toolkits + observances)
+- Built playbooks, calendars, and briefing templates
+- Owned distribution guidance + rollout support
+- Outcome: Faster launches + consistent quality

@@ -1,0 +1,4 @@
+- Role: Enterprise content ops lead (CCOE pilot)
+- Built tagging taxonomy, intake flow, and reporting cadence
+- Owned enablement + adoption playbook
+- Outcome: Cleaner reporting + faster handoffs

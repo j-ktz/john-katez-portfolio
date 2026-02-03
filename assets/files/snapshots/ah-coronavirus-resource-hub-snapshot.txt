@@ -1,0 +1,4 @@
+- Role: Crisis comms strategy lead for public hub
+- Built IA, FAQ system, and update governance
+- Owned cross-channel alignment to the hub
+- Outcome: Trusted single source of truth

@@ -1,11 +1,9 @@
 # John Katez Portfolio
 
-Version: v5.8 (v63 social highlights + recruiter mode indicator)
+Version: v5.9 (v64 gallery expansion + snapshot strips)
 Updated: 2026-02-03
 
-## Changelog (v63)
-- Fixed creative gallery card builders (restored JS parsing).
-- Added Instagram + X social highlights.
-- Added 100 Whole Lives story series case study and homepage social wins rail.
-- Added Recruiter Mode state indicator.
-- Refreshed case study language and homepage highlights.
+## Changelog (v64)
+- Expanded social highlights (LinkedIn + YouTube + partner proof).
+- Added recruiter snapshot strips + downloadable bullet files.
+- Expanded visual libraries across all case studies.
