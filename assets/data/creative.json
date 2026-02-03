@@ -142,6 +142,22 @@
       "label": "X \u2022 @AdventHealth"
     },
     {
+      "type": "social",
+      "platform": "Instagram",
+      "title": "Life at AdventHealth",
+      "description": "Employer brand and culture storytelling.",
+      "url": "https://www.instagram.com/lifeatadventhealth/",
+      "label": "Instagram \u2022 @lifeatadventhealth"
+    },
+    {
+      "type": "social",
+      "platform": "X",
+      "title": "AdventHealth Central Florida on X",
+      "description": "Regional updates and community care news.",
+      "url": "https://x.com/AdventHealthCFL",
+      "label": "X \u2022 @AdventHealthCFL"
+    },
+    {
       "type": "campaign",
       "title": "Feel Whole campaign landing",
       "description": "Brand campaign hub featuring whole-person care stories and the core campaign prompt.",
@@ -209,6 +225,14 @@
       "url": "https://www.adventhealth.com/videos",
       "thumb": "https://www.adventhealth.com/sites/default/files/styles/sixteen_nine_lg/public/2024-08/Mother%20and%20daughter%20together.jpg.webp",
       "tag": "Video series"
+    },
+    {
+      "title": "100 Whole Lives case study",
+      "type": "case",
+      "description": "Series framing, story briefs, and distribution packaging.",
+      "url": "ah-100-whole-lives.html",
+      "thumb": "https://www.adventhealth.com/sites/default/files/styles/sixteen_nine_lg/public/2024-08/Mother%20and%20daughter%20together.jpg.webp",
+      "tag": "Story series"
     },
     {
       "title": "Coronavirus Resource Hub",
@@ -311,6 +335,22 @@
       "description": "Recruiting post inviting talent to join AdventHealth teams.",
       "url": "https://www.linkedin.com/posts/adventhealth_join-our-adventhealth-team-activity-6923347170729340928-q6wA",
       "tag": "Recruiting",
+      "type": "social"
+    },
+    {
+      "title": "Life at AdventHealth",
+      "platform": "Instagram",
+      "description": "Employer brand highlights and behind-the-scenes culture stories.",
+      "url": "https://www.instagram.com/lifeatadventhealth/",
+      "tag": "Employer brand",
+      "type": "social"
+    },
+    {
+      "title": "AdventHealth Central Florida",
+      "platform": "X",
+      "description": "Regional updates, community care news, and brand storytelling.",
+      "url": "https://x.com/AdventHealthCFL",
+      "tag": "Community care",
       "type": "social"
     },
     {
