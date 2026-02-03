@@ -271,5 +271,47 @@
       "url": "ah-ccoe-ortho.html",
       "tag": "Governance"
     }
+  ],
+  "socialHighlights": [
+    {
+      "title": "Global Missions expansion",
+      "platform": "LinkedIn",
+      "description": "AdventHealth Global Missions expands Amazon River outreach in Peru and Brazil.",
+      "url": "https://www.linkedin.com/posts/adventhealth_adventhealth-global-missions-is-expanding-activity-7374789143459045376-uANM",
+      "tag": "Community impact",
+      "type": "social"
+    },
+    {
+      "title": "Corporate campus solar energy project",
+      "platform": "LinkedIn",
+      "description": "Announcement of a solar energy project and EV charging investment at the corporate campus.",
+      "url": "https://www.linkedin.com/posts/adventhealth_adventhealths-corporate-campus-solar-energy-activity-7308532945936416769-LYkV",
+      "tag": "Sustainability",
+      "type": "social"
+    },
+    {
+      "title": "Supply chain team spotlight",
+      "platform": "LinkedIn",
+      "description": "Post recognizing supply chain teams supporting patient experience across AdventHealth.",
+      "url": "https://www.linkedin.com/posts/adventhealth_behind-every-patient-experience-is-a-team-activity-7397328983278903296-5vMG",
+      "tag": "Operations",
+      "type": "social"
+    },
+    {
+      "title": "America's Greatest Workplaces for Diversity",
+      "platform": "LinkedIn",
+      "description": "Recognition of AdventHealth among America\u2019s Greatest Workplaces for Diversity.",
+      "url": "https://www.linkedin.com/posts/adventhealth_adventhealth-among-americas-greatest-workplaces-activity-7155950669835718656-ckzd",
+      "tag": "Employer brand",
+      "type": "social"
+    },
+    {
+      "title": "Join our AdventHealth team",
+      "platform": "LinkedIn",
+      "description": "Recruiting post inviting talent to join AdventHealth teams.",
+      "url": "https://www.linkedin.com/posts/adventhealth_join-our-adventhealth-team-activity-6923347170729340928-q6wA",
+      "tag": "Recruiting",
+      "type": "social"
+    }
   ]
 }

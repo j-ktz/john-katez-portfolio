@@ -1,5 +1,5 @@
 (function () {
-  const SITE_VERSION = "60";
+  const SITE_VERSION = "61";
   window.SITE_VERSION = SITE_VERSION;
 
   const ticker = document.querySelector('.ticker');
