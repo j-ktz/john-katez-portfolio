@@ -1,10 +1,9 @@
 # John Katez Portfolio
 
-Version: v5.2 (v57 polish + gallery + TLDR upgrades)
+Version: v5.3 (v58 gallery + new case studies)
 Updated: 2026-02-03
 
-## Changelog (v57)
-- Added a unified TL;DR panel across all case studies (collapsible, mobile-friendly).
-- Polished typography, buttons, cards, and gallery presentation for a more premium feel.
-- Stabilized ticker + modal behavior and improved reduced-motion handling.
-- Fixed gallery favicon + social proof loading and refreshed cache-busting.
+## Changelog (v58)
+- Added new AdventHealth case studies (Feel Whole, Coronavirus Resource Hub, Blog of the Year).
+- Expanded gallery proof sources with campaign, resource, and award links.
+- Updated highlights ticker to reflect new proof points.

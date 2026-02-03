@@ -1,5 +1,5 @@
 (function () {
-  const SITE_VERSION = "57";
+  const SITE_VERSION = "58";
   window.SITE_VERSION = SITE_VERSION;
 
   const ticker = document.querySelector('.ticker');
@@ -672,6 +672,7 @@
     }
     if(modeBtn){
       modeBtn.setAttribute('aria-pressed', mode === 'recruiter' ? 'true' : 'false');
+      modeBtn.setAttribute('aria-label', mode === 'recruiter' ? 'Recruiter mode enabled' : 'Recruiter mode disabled');
       modeBtn.classList.toggle('is-active', mode === 'recruiter');
     }
   }
