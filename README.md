@@ -1,9 +1,9 @@
 # John Katez Portfolio
 
-Version: v6.4 (v69 fixes + best work thumbnails)
+Version: v7.0 (2.0 foundation + work page)
 Updated: 2026-02-03
 
-## Changelog (v69)
-- Fixed highlight ticker modal visibility.
-- Rebuilt best work library thumbnails with local assets.
-- Added image fallbacks for library and case study tiles.
+## Changelog (v70)
+- Laid 2.0 design foundation (premium product look + new layout system).
+- Added Work page and upgraded Home + Proof Library structure.
+- Standardized navigation and active state logic.
