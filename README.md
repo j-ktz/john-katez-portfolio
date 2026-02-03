@@ -1,9 +1,7 @@
 # John Katez Portfolio
 
-Version: v5.3 (v58 gallery + new case studies)
+Version: v5.4 (v59 recruiter mode status)
 Updated: 2026-02-03
 
-## Changelog (v58)
-- Added new AdventHealth case studies (Feel Whole, Coronavirus Resource Hub, Blog of the Year).
-- Expanded gallery proof sources with campaign, resource, and award links.
-- Updated highlights ticker to reflect new proof points.
+## Changelog (v59)
+- Added visible Recruiter Mode on/off state with tooltip and styling.
