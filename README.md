@@ -1,7 +1,8 @@
 # John Katez Portfolio
 
-Version: v5.4 (v59 recruiter mode status)
+Version: v5.5 (v60 visual library expansion)
 Updated: 2026-02-03
 
-## Changelog (v59)
-- Added visible Recruiter Mode on/off state with tooltip and styling.
+## Changelog (v60)
+- Added a best-work visual library to the Gallery page with richer cards and filters.
+- Added visual library sections to key case studies.

@@ -184,5 +184,92 @@
       "url": "https://wgcontent.com/case-study/mission-led-blog-strategy-drives-major-content-performance-gains/",
       "source": "WG Content"
     }
+  ],
+  "library": [
+    {
+      "title": "Feel Whole campaign hub",
+      "type": "campaign",
+      "description": "Brand platform landing focused on whole-person care stories.",
+      "url": "https://health.adventhealth.com/feelwhole",
+      "thumb": "https://www.adventhealth.com/sites/default/files/styles/sixteen_nine_lg/public/2024-08/Seascape%20PA%2010.jpg.webp",
+      "tag": "Brand campaign"
+    },
+    {
+      "title": "Feel Whole storytelling series",
+      "type": "campaign",
+      "description": "Story-led programming aligned to the Feel Whole brand platform.",
+      "url": "https://health.adventhealth.com/feelwhole",
+      "thumb": "https://www.adventhealth.com/sites/default/files/styles/sixteen_nine_lg/public/2024-08/Older%20couple%20riding%20bikes.jpg.webp",
+      "tag": "Story series"
+    },
+    {
+      "title": "100 Whole Lives series",
+      "type": "campaign",
+      "description": "Public video series featuring patient stories and outcomes.",
+      "url": "https://www.adventhealth.com/videos",
+      "thumb": "https://www.adventhealth.com/sites/default/files/styles/sixteen_nine_lg/public/2024-08/Mother%20and%20daughter%20together.jpg.webp",
+      "tag": "Video series"
+    },
+    {
+      "title": "Coronavirus Resource Hub",
+      "type": "resource",
+      "description": "Central hub for COVID-19 updates, FAQs, and care guidance.",
+      "url": "https://www.adventhealth.com/coronavirus-resource-hub",
+      "thumb": "https://www.adventhealth.com/sites/default/files/styles/sixteen_nine_lg/public/2024-03/dad-daughter-masks-1280x720.jpg.webp",
+      "tag": "Crisis comms"
+    },
+    {
+      "title": "Vaccine Resource Hub",
+      "type": "resource",
+      "description": "Vaccine guidance and public health resources for communities.",
+      "url": "https://www.adventhealth.com/coronavirus-resource-hub/adventhealth-coronavirus-vaccine-resource-hub",
+      "thumb": "https://www.adventhealth.com/sites/default/files/styles/sixteen_nine_lg/public/2024-02/vaccine2-1280x720.jpg.webp",
+      "tag": "Public health"
+    },
+    {
+      "title": "Swaay.Health Blog or Publication of the Year",
+      "type": "award",
+      "description": "AdventHealth Blog recognized in the 2025 awards winners list.",
+      "url": "https://swaay.health/2025-swaay-health-award-winners/",
+      "tag": "Awards"
+    },
+    {
+      "title": "#AskAlfredo \u2014 Olive Garden",
+      "type": "case",
+      "description": "Earned media Q&A format with high engagement and press pickup.",
+      "url": "ask-alfredo.html",
+      "thumb": "assets/images/askalfredo-press-hero.jpg",
+      "tag": "Earned media"
+    },
+    {
+      "title": "Breadstick Bouquets \u2014 Olive Garden",
+      "type": "case",
+      "description": "Seasonal visual concept engineered for shareability and pickup.",
+      "url": "breadstick-bouquets.html",
+      "thumb": "assets/images/breadsticks-press-hero.jpg",
+      "tag": "Brand moment"
+    },
+    {
+      "title": "Swiftie Culture Moments \u2014 Olive Garden",
+      "type": "case",
+      "description": "Fast-turn culture marketing with tone guardrails and community patterns.",
+      "url": "swiftie-moment.html",
+      "thumb": "assets/images/swiftie-press-hero.jpg",
+      "tag": "Culture marketing"
+    },
+    {
+      "title": "Darden \u00d7 Uber Direct",
+      "type": "case",
+      "description": "Partnership narrative for first-party delivery positioning.",
+      "url": "darden-uber.html",
+      "tag": "Partnerships"
+    },
+    {
+      "title": "Content Center of Excellence Pilot",
+      "type": "case",
+      "description": "Governance, enablement, and workflow standards at scale.",
+      "url": "ah-ccoe-ortho.html",
+      "tag": "Governance"
+    }
   ]
 }
