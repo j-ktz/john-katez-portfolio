@@ -312,6 +312,33 @@
       "url": "https://www.linkedin.com/posts/adventhealth_join-our-adventhealth-team-activity-6923347170729340928-q6wA",
       "tag": "Recruiting",
       "type": "social"
+    },
+    {
+      "title": "The #WholeLifeGoal: Feel Whole",
+      "platform": "YouTube",
+      "description": "Feel Whole brand platform spot from AdventHealth.",
+      "url": "https://www.youtube.com/watch?v=WtrUzejq1zg",
+      "thumb": "https://i.ytimg.com/vi/WtrUzejq1zg/hqdefault.jpg",
+      "tag": "Brand platform",
+      "type": "social"
+    },
+    {
+      "title": "Emotional Support, by AdventHealth",
+      "platform": "YouTube",
+      "description": "Brand story focused on emotional support and care.",
+      "url": "https://www.youtube.com/watch?v=9rD8G2AjJjU",
+      "thumb": "https://i.ytimg.com/vi/9rD8G2AjJjU/hqdefault.jpg",
+      "tag": "Brand story",
+      "type": "social"
+    },
+    {
+      "title": "We're always with you",
+      "platform": "YouTube",
+      "description": "Care and reassurance message from AdventHealth.",
+      "url": "https://www.youtube.com/watch?v=WNwTjXr2cU8",
+      "thumb": "https://i.ytimg.com/vi/WNwTjXr2cU8/hqdefault.jpg",
+      "tag": "Brand spot",
+      "type": "social"
     }
   ]
 }
