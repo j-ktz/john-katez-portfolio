@@ -346,11 +346,27 @@
       "type": "social"
     },
     {
+      "title": "AdventHealth on Instagram",
+      "platform": "Instagram",
+      "description": "Main brand feed with campaign and community storytelling.",
+      "url": "https://www.instagram.com/adventhealth/",
+      "tag": "Brand storytelling",
+      "type": "social"
+    },
+    {
       "title": "AdventHealth Central Florida",
       "platform": "X",
       "description": "Regional updates, community care news, and brand storytelling.",
       "url": "https://x.com/AdventHealthCFL",
       "tag": "Community care",
+      "type": "social"
+    },
+    {
+      "title": "Greater As A Whole (AdventHealth Careers)",
+      "platform": "X",
+      "description": "Employer brand and recruiting stories from AdventHealth Careers.",
+      "url": "https://twitter.com/GreaterAsAWhole",
+      "tag": "Recruiting",
       "type": "social"
     },
     {
