@@ -101,7 +101,7 @@
   },
   {
     "title": "Blog of the Year recognition",
-    "detail": "Recognition for mission-led blog strategy and performance (per WG Content awards roundup).",
+    "detail": "Swaay.Health 2025 awards: AdventHealth Blog recognized as Blog or Publication of the Year.",
     "href": "ah-blog-of-the-year.html"
   },
   {
