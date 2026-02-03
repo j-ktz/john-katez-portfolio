@@ -1050,6 +1050,16 @@ details.tldr-panel[open] > summary:after{content:'–'}
 
 .nav__link--active{background:rgba(125,211,252,.14);border-color:rgba(125,211,252,.45);color:var(--text)}
 
+/* Case study layout polish */
+.case-layout{display:grid;gap:16px}
+.case-layout .card{border-radius:var(--radius-lg);background:var(--surface);border:1px solid rgba(255,255,255,.10);box-shadow:var(--shadow)}
+.case-layout .card__inner{padding:20px}
+.case-layout .press-grid{margin-top:12px}
+@media (min-width: 900px){
+  .case-layout{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .case-layout .card:first-child{grid-column:span 2}
+}
+
 @media (min-width:900px){
   .hero-grid{grid-template-columns:1.3fr .7fr}
   .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
