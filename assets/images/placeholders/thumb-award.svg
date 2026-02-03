@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Award placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f1a23"/>
+      <stop offset="55%" stop-color="#172734"/>
+      <stop offset="100%" stop-color="#0b1218"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="20%" cy="-10%" r="80%">
+      <stop offset="0%" stop-color="#3e5f75" stop-opacity="0.6"/>
+      <stop offset="55%" stop-color="#0f1a23" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)"/>
+  <rect width="960" height="540" fill="url(#glow)"/>
+  <rect x="24" y="24" width="912" height="492" rx="28" ry="28" fill="none" stroke="#2a3b48" stroke-width="2" opacity="0.6"/>
+  <g fill="none" stroke="#213140" stroke-width="1" opacity="0.35">
+    <path d="M60 420 L240 280 L370 360 L520 230 L760 320"/>
+    <circle cx="240" cy="280" r="6" fill="#2d4253"/>
+    <circle cx="520" cy="230" r="6" fill="#2d4253"/>
+  </g>
+  <text x="60" y="110" font-family="'Arial', sans-serif" font-size="32" fill="#b7c6d4" letter-spacing="2">Award</text>
+  <text x="60" y="155" font-family="'Arial', sans-serif" font-size="18" fill="#8ea2b4">Preview placeholder</text>
+</svg>
