@@ -533,15 +533,14 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: opacity 0.3s ease, max-height 0.35s ease;
+  transform: translateY(6px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .engine-node:hover .engine-kpi,
 .engine-node.is-active .engine-kpi {
   opacity: 1;
-  max-height: 80px;
+  transform: translateY(0);
 }
 
 .engine-detail {
@@ -600,7 +599,7 @@ h3 {
 
 .engine-node.is-expanded .engine-kpi {
   opacity: 1;
-  max-height: 120px;
+  transform: translateY(0);
 }
 
 .engine-node.is-expanded .mini-chart {
