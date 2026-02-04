@@ -630,6 +630,13 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
+.case-hint {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  display: none;
+}
+
 .case-card {
   display: grid;
   gap: 16px;
@@ -661,6 +668,44 @@ h3 {
   position: relative;
   color: #f6f2ea;
   overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .case-hint {
+    display: block;
+  }
+
+  .case-grid {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 16px;
+    padding: 0 4px 8px;
+  }
+
+  .case-grid::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .case-grid::-webkit-scrollbar-thumb {
+    background: rgba(244, 239, 231, 0.18);
+    border-radius: 999px;
+  }
+
+  .case-card {
+    min-width: 82vw;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+  }
+
+  .case-poster {
+    min-height: 160px;
+  }
+
+  .summary {
+    display: none;
+  }
 }
 
 .case-poster::after {
