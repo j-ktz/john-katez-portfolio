@@ -31,6 +31,35 @@ body.recruiter {
   --shadow: none;
 }
 
+.recruiter-only {
+  display: none;
+}
+
+body.recruiter .recruiter-only {
+  display: block;
+}
+
+.recruiter-panel {
+  margin-top: 24px;
+  padding: 18px 20px;
+  border-radius: 16px;
+  background: rgba(11, 12, 16, 0.8);
+  border: 2px solid rgba(244, 239, 231, 0.08);
+}
+
+.recruiter-panel h2 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+.recruiter-panel ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
 .noise {
   position: fixed;
   inset: 0;
@@ -167,6 +196,54 @@ section {
   color: var(--muted);
 }
 
+.wins {
+  background: linear-gradient(120deg, rgba(255, 106, 77, 0.08), transparent 60%);
+}
+
+.wins-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.wins-card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 18px 20px;
+  border: 2px solid rgba(244, 239, 231, 0.08);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.wins-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(45, 91, 255, 0.25), rgba(255, 106, 77, 0.12));
+  opacity: 0.28;
+  pointer-events: none;
+}
+
+.wins-label {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 11px;
+  color: var(--muted);
+  margin: 0 0 8px;
+}
+
+.wins-value {
+  font-family: "Archivo Black", sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin: 0 0 6px;
+}
+
+.wins-context {
+  margin: 0;
+  color: var(--muted);
+}
+
 .hero::before {
   content: "";
   position: absolute;
@@ -259,6 +336,7 @@ h3 {
   cursor: pointer;
   background: transparent;
   color: inherit;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .btn.primary {
@@ -651,6 +729,7 @@ h3 {
   box-shadow: var(--shadow);
   --case-accent: var(--accent);
   --case-accent-2: var(--accent-2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .case-poster {
@@ -900,6 +979,7 @@ h3 {
   border-radius: 16px;
   padding: 20px;
   border: 2px solid rgba(244, 239, 231, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .contact {
@@ -925,6 +1005,26 @@ h3 {
   text-align: center;
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+@media (hover: hover) {
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.25);
+  }
+
+  .btn:active {
+    transform: translateY(0);
+  }
+
+  .case-card:hover,
+  .wins-card:hover,
+  .system-card:hover,
+  .leadership-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255, 106, 77, 0.45);
+    box-shadow: 0 26px 60px rgba(0, 0, 0, 0.45);
+  }
 }
 
 [data-reveal] {
@@ -1179,4 +1279,16 @@ body.recruiter [data-reveal] {
   opacity: 1;
   transform: none;
   transition: none;
+}
+
+body.recruiter section {
+  padding: 72px 0;
+}
+
+body.recruiter .hero {
+  padding-top: 100px;
+}
+
+body.recruiter .brag-band {
+  display: none;
 }
