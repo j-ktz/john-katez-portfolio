@@ -8,7 +8,9 @@ const engineNodes = engine ? Array.from(engine.querySelectorAll(".engine-node"))
 const engineLines = engine ? Array.from(engine.querySelectorAll(".engine-line")) : [];
 const engineLabels = engine ? Array.from(engine.querySelectorAll(".engine-label")) : [];
 const engineChips = engine ? Array.from(engine.querySelectorAll(".engine-chip")) : [];
-const caseToggleButtons = Array.from(document.querySelectorAll("[data-case-toggle]"));
+const caseGrid = document.querySelector("[data-case-grid]");
+const casePrev = document.querySelector("[data-case-prev]");
+const caseNext = document.querySelector("[data-case-next]");
 
 const formatValue = (value, suffix, decimals, prefix) => {
   const fixed = decimals ? value.toFixed(decimals) : Math.round(value).toString();
@@ -82,17 +84,13 @@ if (metricTargets.length > 0) {
   }
 }
 
-if (caseToggleButtons.length > 0) {
-  caseToggleButtons.forEach((button) => {
-    button.addEventListener("click", (event) => {
-      event.preventDefault();
-      event.stopPropagation();
-      const card = button.closest(".case-card");
-      if (!card) return;
-      const isOpen = card.classList.toggle("is-open");
-      button.setAttribute("aria-expanded", isOpen ? "true" : "false");
-      button.textContent = isOpen ? "Hide details" : "Tap for details";
-    });
+if (caseGrid && casePrev && caseNext) {
+  const scrollAmount = () => Math.max(caseGrid.clientWidth * 0.85, 260);
+  casePrev.addEventListener("click", () => {
+    caseGrid.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
+  });
+  caseNext.addEventListener("click", () => {
+    caseGrid.scrollBy({ left: scrollAmount(), behavior: "smooth" });
   });
 }
 
