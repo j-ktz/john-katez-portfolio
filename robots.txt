@@ -1,2 +1,14 @@
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /resume.html
+Disallow: /assets/files/John_Katez_Master_Resume.pdf
+Disallow: /index-legacy.html
+Disallow: /gallery-private-368f89.html
+Disallow: /case-studies.html
+Disallow: /creative-gallery.html
+Disallow: /work.html
+Disallow: /ah-
+Disallow: /ask-alfredo.html
+Disallow: /breadstick-bouquets.html
+Disallow: /darden-uber.html
+Disallow: /swiftie-moment.html
