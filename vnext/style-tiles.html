@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>vNext Style Tiles</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Space Grotesk", system-ui, sans-serif;
+        background: #0b0c10;
+        color: #f4efe7;
+      }
+      .wrap {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 40px 24px 80px;
+      }
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 24px;
+      }
+      .grid {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      }
+      figure {
+        margin: 0;
+        background: #11131a;
+        border: 1px solid rgba(244, 239, 231, 0.1);
+        border-radius: 16px;
+        overflow: hidden;
+      }
+      figcaption {
+        padding: 12px 16px 16px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        color: #b6b1a9;
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        background: #0b0c10;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>vNext Aesthetic Tiles</h1>
+      <div class="grid">
+        <figure>
+          <img src="assets/images/style-a-bold-graphic.svg" alt="Style A: Bold Graphic Poster" />
+          <figcaption>A — Bold Graphic Poster</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/style-b-command-center.svg" alt="Style B: Command Center" />
+          <figcaption>B — Command Center Futurism</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/style-c-brutalist-editorial.svg" alt="Style C: Brutalist Editorial" />
+          <figcaption>C — Brutalist Editorial</figcaption>
+        </figure>
+      </div>
+    </div>
+  </body>
+</html>
