@@ -638,18 +638,92 @@ h3 {
   border: 2px solid rgba(244, 239, 231, 0.08);
   overflow: hidden;
   box-shadow: var(--shadow);
+  --case-accent: var(--accent);
+  --case-accent-2: var(--accent-2);
 }
 
 .case-poster {
   min-height: 200px;
-  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  padding: 24px;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.18), transparent 42%),
+    radial-gradient(circle at 85% 0%, rgba(0, 0, 0, 0.28), transparent 38%),
+    linear-gradient(125deg, var(--case-accent), var(--case-accent-2));
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap: 12px;
   font-family: "Archivo Black", sans-serif;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  font-size: 0.95rem;
+  font-size: 0.82rem;
+  position: relative;
+  color: #f6f2ea;
+  overflow: hidden;
+}
+
+.case-poster::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(120deg, rgba(11, 12, 16, 0.05) 0%, rgba(11, 12, 16, 0.45) 100%),
+    repeating-linear-gradient(120deg, rgba(255, 255, 255, 0.08) 0 1px, transparent 1px 14px);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.case-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(10, 12, 18, 0.25);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.case-icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+.case-kicker {
+  margin: 0;
+  z-index: 1;
+}
+
+.case-card--brand {
+  --case-accent: #5a6bff;
+  --case-accent-2: #ff6a4d;
+}
+
+.case-card--editorial {
+  --case-accent: #4ed6ff;
+  --case-accent-2: #6a4dff;
+}
+
+.case-card--linkedin {
+  --case-accent: #1a91ff;
+  --case-accent-2: #00e0d8;
+}
+
+.case-card--governance {
+  --case-accent: #f6b058;
+  --case-accent-2: #ff6a4d;
+}
+
+.case-card--enterprise {
+  --case-accent: #6d7cff;
+  --case-accent-2: #ff4fd8;
+}
+
+.case-card--seo {
+  --case-accent: #36f4c7;
+  --case-accent-2: #5186ff;
 }
 
 .case-body {
