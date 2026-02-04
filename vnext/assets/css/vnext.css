@@ -676,27 +676,8 @@ h3 {
   }
 
   .case-grid {
-    display: flex;
-    gap: 16px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-padding: 16px;
-    padding: 0 4px 8px;
-  }
-
-  .case-grid::-webkit-scrollbar {
-    height: 6px;
-  }
-
-  .case-grid::-webkit-scrollbar-thumb {
-    background: rgba(244, 239, 231, 0.18);
-    border-radius: 999px;
-  }
-
-  .case-card {
-    min-width: 82vw;
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .case-poster {
@@ -775,6 +756,21 @@ h3 {
   padding: 18px 20px 22px;
 }
 
+.case-toggle {
+  margin-top: 6px;
+  display: none;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(244, 239, 231, 0.18);
+  background: rgba(11, 12, 16, 0.6);
+  color: var(--text);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 .case-lede {
   margin: 0 0 16px;
   color: var(--muted);
@@ -784,6 +780,16 @@ h3 {
   display: grid;
   gap: 8px;
   font-size: 0.95rem;
+}
+
+.case-card.is-open .summary {
+  display: grid;
+}
+
+@media (max-width: 900px) {
+  .case-toggle {
+    display: inline-flex;
+  }
 }
 
 .summary span {
