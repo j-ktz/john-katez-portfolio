@@ -249,3 +249,32 @@ if (engine && engineNodes.length > 0) {
   updateEngineProgress();
   startCycle();
 }
+
+/* ═══════════════════════════════════════════════════════════
+   SOCIAL SHOWCASE — Platform filter
+   ═══════════════════════════════════════════════════════════ */
+(function() {
+  const tabs = document.querySelectorAll(".social-tab");
+  const cards = document.querySelectorAll(".social-card");
+
+  if (!tabs.length) return;
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      const platform = tab.dataset.platform;
+
+      // Update active tab
+      tabs.forEach(t => t.classList.remove("is-active"));
+      tab.classList.add("is-active");
+
+      // Show/hide cards
+      cards.forEach(card => {
+        if (platform === "all" || card.dataset.platform === platform) {
+          card.classList.remove("is-hidden");
+        } else {
+          card.classList.add("is-hidden");
+        }
+      });
+    });
+  });
+})();
