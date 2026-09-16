@@ -98,7 +98,7 @@ const setRecruiterMode = (enabled) => {
   document.body.classList.toggle("recruiter", enabled);
   if (modeToggle) {
     modeToggle.setAttribute("aria-pressed", enabled ? "true" : "false");
-    modeToggle.textContent = enabled ? "Recruiter Mode On" : "Recruiter Mode";
+    modeToggle.textContent = enabled ? "Skim Mode On" : "Skim Mode";
   }
   localStorage.setItem("recruiterMode", enabled ? "1" : "0");
 };

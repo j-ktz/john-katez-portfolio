@@ -166,7 +166,7 @@
   {
     "title": "Third-party amplification partnerships",
     "detail": "Collaborated with internal teams and external partners to extend reach through entertainment, sports, and third‑party distribution.",
-    "href": "darden-uber.html"
+    "href": "case-studies.html"
   },
   {
     "title": "Culture moments + brand participation",
